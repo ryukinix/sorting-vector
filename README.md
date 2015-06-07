@@ -2,11 +2,11 @@
 **Abstract**: Some codes of sort algorithm and complexity of algorithms for the discipline Data Structs on college. The objective is eval the efficience and compare with empiric tests the algorithms to each other.
 
 ## Sorting Algorithms!
-# Bubble
+#### Bubble
 ![Bubble!](Examples/bubble-sort.gif)
-# Merge
+#### Merge
 ![Merge!](Examples/merge-sort.gif)
-# Quick
+#### Quick
 ![Quick!](Examples/quick-sort.gif)
 
 ## License
