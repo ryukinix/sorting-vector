@@ -11,7 +11,7 @@
 #define meta_func(func, times, lenght, i) \
 	copy_vector(shadow, vector, lenght); \
 	t = clock(); \
-	func(vector, 0, lenght); \
+	func(shadow, 0, lenght); \
 	t = clock() - t; \
 	printf("[%s]time to sort(%li): %4.10fs\n", #func, lenght, ((double)t/CLOCKS_PER_SEC)); \
 	times[i] = ((double)t/CLOCKS_PER_SEC);  
