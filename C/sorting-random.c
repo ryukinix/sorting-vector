@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-#include <string.h>
-#include <time.h>
 #include <stdbool.h>
+#include <string.h>
+#include <math.h>
+#include <time.h>
+
 
 #define N_FUNCS 3
 #define N_EXEC 20
