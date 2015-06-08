@@ -3,9 +3,8 @@
 #include <math.h>
 #include <string.h>
 #include <time.h>
+#include <stdbool.h>
 
-#define true 1
-#define false 0
 #define N_FUNCS 3
 #define N_EXEC 20
 
@@ -21,11 +20,9 @@
 
 int exist_in_vector(long unsigned *vector, int limit, int num){
 	int i;
-	for(i = 0; i < limit; i++){
-		if (vector[i] == num){
+	for(i = 0; i < limit; i++)
+		if (vector[i] == num)
 			return true;
-		}
-	}
 	return false;
 }
 
@@ -164,6 +161,7 @@ void quick_sort(long unsigned *item, int left, int right){
 
 // a implementar
 void personal_sort(unsigned long *vector, unsigned long lenght){
+	
 
 }
 
