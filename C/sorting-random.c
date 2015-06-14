@@ -224,14 +224,14 @@ int main(void){
 	int i, j, tests = 0;
 
 	clear_file("data.db");
-	printf("Ordenação de números aleatórios distintos\n");
+	printf("Sorting vectors with random distinct numbers\n");
 	for(i = 1; i <= 7; i++){
 		//alocar
 		lenght = pow(10, i);
 		vector = (long unsigned*) realloc(vector, lenght*sizeof(long));
 		
 		if (vector == NULL){
-			printf("Não foi possível alocar memória para tamanho n = %li elementos\n", lenght);
+			printf("Is not possible alloc memory for vector of n = %li elements\n", lenght);
 			exit(EXIT_FAILURE);
 		}
 
@@ -245,8 +245,10 @@ int main(void){
 		double temp_times[N_FUNCS];
 		for(j = 0; j < N_EXEC; j++){
 			//metodos de ordenação
+			printf("Execution j = %d\n", j);
 			sort_methods(vector, temp_times, j, lenght);
 			write_file(temp_times, lenght);
+			printf("\n");
 		}	
 	}
 
