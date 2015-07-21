@@ -170,9 +170,9 @@ void write_file(double *data, unsigned long lenght){
 	f = fopen("data.db", "a");
 
 	int i;
-	fprintf(f, "%li = ", lenght);
+	fprintf(f, "%li ", lenght);
 	for(i = 0; i < N_FUNCS; i++)
-		fprintf(f, "%d:%.10f | ", i + 1, data[i]);
+		fprintf(f, "%.10f ", data[i]);
 	fprintf(f, "\n");
 	fclose(f);
 }
